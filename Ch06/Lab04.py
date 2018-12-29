@@ -1,12 +1,14 @@
-login_id = input("아이디를 입력하세요.")
-pwd = input("비밀번호를 입력하세요.")
-
-com_id = "min"
-com_pwd = "1174"
-
-if login_id == com_id and pwd == com_pwd:
-    print("-로그인-.")
-elif login_id == com_id and pwd != com_pwd:
-        print("암호가 잘못 되었습니다.")
-else :
-    print("존재하지 않는 아이디입니다.")
+import random
+x = random.randint(1, 100)
+y = random.randint(1, 100)
+while True:
+    #x = random.randint(1, 100)
+    #y = random.randint(1, 100)
+    print(x, "+", y, "의 값은?")
+    userNo = int(input())
+    if userNo == (x + y):
+        print("정답입니다.")
+        break
+    else :
+        print("오답입니다.")
+        print("다른 문제를 풀어보세요.")

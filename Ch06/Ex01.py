@@ -1,13 +1,17 @@
-import random
+for i in range(2, 101, 2):
+    print(i, end=" ")
 
-options =["왼쪽", "중앙", "오른쪽"]
+print( )
 
-pos = input("어느쪽으로 차시겠습니까? [왼쪽, 오른쪽, 중앙]")
+for b in range(100):
+    b += 1
+    if b % 2 == 0:
+        print(b, end=" ")
 
-com_pos = random.choice(options)
+print()
 
-if pos == com_pos:
-    print("패널티킥을 막아냈습니다,")
-else :
-    print("골인입니다.")
-
+a = 0
+while True :
+    if a <100:
+        a = a + 2
+        print(a, end= " ")

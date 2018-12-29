@@ -1,14 +1,10 @@
-import random
+sumAll = 0
 
-num1 = random.randint(1,100)
-num2 = random.randint(1,100)
+while True:
+    print("정수를 입력하세요.", end="")
+    userNo = int(input())
+    sumAll = sumAll + userNo
+    if userNo == 0:
+        break
+print("합은", sumAll, "입니다.")
 
-a = str(num1) + "-" + str(num2) + "의 값은얼마인가요."
-answer = int(input(a))
-
-com_answer = num1 - num2
-
-if com_answer == answer:
-    print("정답입니다.")
-else:
-    print("오답입니다.")

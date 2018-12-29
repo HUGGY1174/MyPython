@@ -1,9 +1,9 @@
-age = int(input("나이를 입력하세요."))
-height = int(input("키를 입력하세요."))
+sumAll = 0
 
-if age >= 13 and height >= 140:
-    print("놀이기구를 즐겨주세요.")
+count = 1
 
-else :
-    print("놀이기구를 탈 수 없습니다.")
+while count <= 10 :
+    sumAll = sumAll + count
+    count = count + 1
 
+print("합계는", sumAll, "입니다")

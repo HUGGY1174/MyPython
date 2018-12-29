@@ -1,10 +1,10 @@
-age = int(input("나이를 입력하세요"))
+a = int(input("원하는 수를 입력하세요"))
 
-if age >= 19:
-    print("성인이시군요. 환영합니다.")
-    print("모든 영화를 관람하실 수 있습니다.")
-elif age >= 15:
-    print("청소년이시군요. 환영합니다.")
-    print("15세 이상 영화를 볼 수 있습니다.")
-else :
-    print("어린이이시군요. 이 영화를 볼 수 없습니다.")
+sumAll = 0
+i = 1
+
+while sumAll <= a :
+    sumAll = sumAll + i
+    i = i + 1
+
+print("원하는 수", a, "만큼을 더한 횟수는", i, "번입니다.")

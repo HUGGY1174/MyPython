@@ -1,7 +1,10 @@
-num = int(input("정수를 입력하세요"))
+fig = int(input("몇각형을 그릴까요?"))
 
-if num % 2 == 0:
-    print("짝수입니다.")
+import turtle
+
+t = turtle.Turtle()
+
+for i in range(fig):
+    t.forward(30)
+    t.left(360/fig)
     
-else :
-    print("홀수입니다.")

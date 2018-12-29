@@ -1,7 +1,8 @@
-age = int(input("나이를 입력하세요"))
+n = int(input("정수를 입력하세요"))
+result = 1
+for i in range(n, 0, -1):
+    result = result * i
 
-if age >= 15:
-    print("청소년이시군요. 이 영화를 볼 수 있습니다.")
-    
-else :
-    print("어린이이시군요. 이 영화를 볼 수 없습니다.")
+print(n, "팩토리얼의 값은", result, "입니다.")
+
+
